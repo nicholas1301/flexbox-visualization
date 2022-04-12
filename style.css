@@ -1,0 +1,100 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+
+html {
+  min-height: 100%;
+  width: 100%;
+  background: rgb(136, 136, 255);
+}
+
+body {
+  min-height: 100%;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 50px;
+  min-height: 100px;
+}
+
+.columns {
+  display: flex;
+}
+
+.column {
+  width: 30%;
+}
+
+.white-box {
+  display: flex;
+  flex-flow: row wrap; /* flex-direction + flex-wrap */
+  align-content: flex-start;
+  background-color: white;
+  margin: 10px;
+  width: 50%;
+  min-height: 95vh;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 93, 120);
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.column3 {
+  padding-top: 20px;
+  padding-left: 15px;
+  text-align: center;
+}
+
+form {
+  text-align: left;
+  line-height: 15px;
+  font-size: 16px;
+}
+
+#num-boxes {
+  width: 15%;
+}
+
+.separator {
+  height: 30px;
+}
+
+
+input, select {
+  background-color: inherit;
+  border: 3px black solid;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+button {
+  height: 40px;
+  width: 100px;
+  border:2px solid rgb(255, 93, 120);
+  border-radius: 8px;
+  background-color: rgb(255, 93, 120);
+  color: white;
+  font-size: large;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+.hi {
+  background-color:rgb(136, 136, 255) ;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caixa de divs</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="title"> 
+    CSS Flexbox display:
+  </div>
+
+  <div class="columns">
+    <div class="column"></div>
+    <div class="white-box column">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <div class="column column3">
+      <form action="">
+        <label for="num-boxes">Número de caixas:</label>
+        <input type="number" id="num-boxes">
+        <br>
+          <div class="separator">
+          </div>
+        <br>
+        <label for="flex-direction">flex-direction:</label>
+        <select name="flex-direction" id="flex-direction">
+            <option value="row">row</option>
+            <option value="row-reverse">row-reverse</option>
+            <option value="column">column</option>
+            <option value="column-reverse">column-reverse</option>
+        </select>
+        <br>
+        <br>
+        <label for="flex-wrap">flex-wrap:</label>
+        <select name="flex-wrap" id="flex-wrap">
+            <option value="nowrap">nowrap</option>
+            <option value="wrap">wrap</option>
+            <option value="wrap-reverse"> wrap-reverse</option>
+        </select>
+        <br>
+        <br>
+        <label for="justify-content">justify-content:</label>
+        <select name="justify-content" id="justify-content">
+            <option value="flex-start" class="hi">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="space-between">space-between</option>
+            <option value="space-around">space-around</option>
+            <option value="space-evenly">space-evenly</option>
+        </select>
+        <br>
+        <br>
+        <label for="align-items">align-items:</label>
+        <select name="align-items" id="align-items">
+            <option value="stretch">stretch</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="baseline">baseline</option>
+        </select>
+        <br>
+        <br>
+        <label for="align-content">align-content:</label>
+        <select name="align-content" id="align-content">
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="stretch">stretch</option>
+            <option value="space-between">space-between</option>
+            <option value="space-around">space-around</option>
+        </select>
+        <br>
+        <br>
+        <button>Aplicar</button>
+    </form>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
