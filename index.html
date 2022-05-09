@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caixa de divs</title>
+  <title>Flexbox demo</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,12 +26,11 @@
       <div class="box"></div>
       <div class="box"></div>
       <div class="box"></div>
-      <div class="box"></div>
     </div>
     <div class="column column3">
-      <form action="">
+      <div class="form">
         <label for="num-boxes">Número de caixas:</label>
-        <input type="number" id="num-boxes">
+        <input type="number" id="num-boxes" value="8">
         <br>
           <div class="separator">
           </div>
@@ -47,8 +46,8 @@
         <br>
         <label for="flex-wrap">flex-wrap:</label>
         <select name="flex-wrap" id="flex-wrap">
-            <option value="nowrap">nowrap</option>
             <option value="wrap">wrap</option>
+            <option value="nowrap">nowrap</option>
             <option value="wrap-reverse"> wrap-reverse</option>
         </select>
         <br>
@@ -66,10 +65,10 @@
         <br>
         <label for="align-items">align-items:</label>
         <select name="align-items" id="align-items">
-            <option value="stretch">stretch</option>
             <option value="flex-start">flex-start</option>
             <option value="flex-end">flex-end</option>
             <option value="center">center</option>
+            <option value="stretch">stretch</option>
             <option value="baseline">baseline</option>
         </select>
         <br>
@@ -83,10 +82,10 @@
             <option value="space-between">space-between</option>
             <option value="space-around">space-around</option>
         </select>
+        <!-- <br>
         <br>
-        <br>
-        <button>Aplicar</button>
-    </form>
+        <button>Reset</button> -->
+      </div>
 
     </div>
   </div>

@@ -30,6 +30,7 @@ body {
 
 .columns {
   display: flex;
+  width: 100%;
 }
 
 .column {
@@ -38,8 +39,11 @@ body {
 
 .white-box {
   display: flex;
-  flex-flow: row wrap; /* flex-direction + flex-wrap */
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*flex-flow: row wrap; flex-direction + flex-wrap */
   align-content: flex-start;
+  align-items: flex-start;
   background-color: white;
   margin: 10px;
   width: 50%;
