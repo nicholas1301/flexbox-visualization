@@ -40,10 +40,11 @@ body {
 .white-box {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   /*flex-flow: row wrap; flex-direction + flex-wrap */
-  align-content: flex-start;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch;
   background-color: white;
   margin: 10px;
   width: 50%;
@@ -56,6 +57,10 @@ body {
   background-color: rgb(255, 93, 120);
   margin: 8px;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 
 .column3 {
@@ -97,8 +102,4 @@ button {
   font-weight: 600;
   margin-top: 20px;
   margin-left: 60px;
-}
-
-.hi {
-  background-color:rgb(136, 136, 255) ;
 }

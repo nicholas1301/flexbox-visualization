@@ -7,17 +7,37 @@ const alignItemsSelector = document.querySelector('#align-items');
 const alignContentSelector = document.querySelector('#align-content');
 const button = document.querySelector('button');
 
-// numBoxesInput.defaultValue = 8;
-numBoxesInput.addEventListener('change', event => {
-  let counter = event.target.value;
-  let text = ''
-  for (let i = 0; i < counter; i++) {
-    text += '<div class="box"></div>';
-  }
-  whiteBox.innerHTML = text;
-});
 
-//whiteBox.style.flexDirection = 'column';
+function reloadWhiteBox(number) {
+  whiteBox.innerHTML = '';
+  for (let i = 0; i < number; i++) {
+    let box = document.createElement('div');
+    box.classList.add('box');
+    box.innerText = i+1;
+    whiteBox.appendChild(box);
+  }
+}
+
+function defaultInputs() {
+  numBoxesInput.value = 5;
+  flexDirectionSelector.value = 'row';
+  flexWrapSelector.value = 'nowrap';
+  justifyContentSelector.value = 'flex-start';
+  alignItemsSelector.value = 'stretch';
+  alignContentSelector.value = 'stretch';
+}
+
+function applyDefaults() {
+  reloadWhiteBox(5);
+  whiteBox.style.flexDirection = 'row';
+  whiteBox.style.flexWrap = 'nowrap';
+  whiteBox.style.justifyContent = 'flex-start';
+  whiteBox.style.alignItems = 'stretch';
+  whiteBox.style.alignContent = 'stretch';
+}
+
+numBoxesInput.addEventListener('change', event => reloadWhiteBox(event.target.value));
+
 flexDirectionSelector.addEventListener('change', event => {
   whiteBox.style.flexDirection = event.target.value;
 });
@@ -38,9 +58,7 @@ alignContentSelector.addEventListener('change', event => {
   whiteBox.style.alignContent = event.target.value;
 });
 
-// button.addEventListener('click', () => {
-//   numBoxesInput.value = 8;
-
-//   flexDirectionSelector.value = 'row';
-
-// })
+button.addEventListener('click', () => {
+  defaultInputs();
+  applyDefaults();
+})
